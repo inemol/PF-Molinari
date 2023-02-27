@@ -6,38 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONG ANIMALES RAMALLO</title>
     <!-- link a css -->
-    <link rel="stylesheet" href="./css/actividad.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
-        
-    <!-- MENÙ NAVEGABLE QUE VA EN TODAS LAS PAGINAS -->
+
 <body>
-    <header>
-        <img src="../assets/LOGO.png" alt="logo ong"> 
-        <nav>
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./adopta.html">ADOPTÁ</a></li>
-                <li><a href="./dona.html">DONÁ</a></li>
-                <li><a href=".participa.html">PARTICIPÁ</a></li>
-                <li><a href="./tienda.html">TIENDA</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
 
+        <!-- MENÙ NAVEGABLE QUE VA EN TODAS LAS PAGINAS -->
+        <header class="">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container">
+                    <img src="../assets/LOGO.png" alt="logo ong" class="img_logo navbar-brand">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                        <a class="nav-link" href="./adopta.html">ADOPTÁ</a>
+                        <a class="nav-link" href="./dona.html">DONÁ</a>
+                        <a class="nav-link" href="./participa.html">PARTICIPÁ</a>
+                        <a class="nav-link" href="./tienda.html">TIENDA</a>
+                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
     </header>
-    <!-- INICIO DEL CONTENIDO PRINCIPAL -->
 
-    <main> 
-        <input type="button" value="SUMATE COMO HOGAR DE TRANSITO">
-        <br>
-        <input type="button" value="SUMATE COMO VOLUNTARIO">
-    </main>
+    <!-- INICIO DEL CONTENIDO: TRANSITAR O SER VOLUNTARIO -->
+    <main>
+        <section class="d-flex flex-column align-items-center justify-content-center d-sm-flex flex-sm-row justify-content-sm-center align-items-sm-center me-sm-5 ms-sm-5 sec-tm justify-content-md-evenly">
+
+            <article class="mt-5 mt-sm-1 mt-md-1 mt-lg-1 mb-1 me-sm-4">
+                <img src="../assets/transito.png" alt="hogar transito" class="img_perro_persona animate__animated animate__zoomIn">
+            </article>
+
+            <article class="d-flex flex-column align-items-center justify-content-evenly article-tam">
+                <h1 class=" text-center animate__animated animate__bounce">SUMATE COMO HOGAR DE TRANSITO</h1>
+                <p class="text-center me-5 ms-5 p-tam ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error eligendi laboriosam dolorem pariatur quod atque, deserunt quisquam accusantium placeat voluptatibus voluptatem nihil exercitationem! Ratione quos consequuntur placeat sapiente quia tenetur!</p>   
+                <button type="button" class="btn btn-lg mt-3 mt-sm-0 fs-4 rounded-4">QUIERO SER TRANSITO</button>
+            </article>
+        </section>
+
+        <section class="d-flex flex-column align-items-center justify-content-center d-sm-flex flex-sm-row-reverse justify-content-sm-center align-items-sm-center me-sm-5 ms-sm-5 sec-tm justify-content-md-evenly">
+            <article class="mt-5 mt-sm-1 mt-md-1 mt-lg-1 mb-1 me-sm-4">
+                <img src="../assets/voluntariado-con-animales-.jpeg" alt="voluntatiado" class="img_perro_persona animate__animated animate__zoomIn">
+            </article>
+
+            <article class="d-flex flex-column align-items-center justify-content-evenly article-tam">
+                <h1 class="text-center animate__animated animate__bounce">SUMATE COMO VOLUNTARIO</h1>
+                <p class="text-center me-5 ms-5 p-tam ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error eligendi laboriosam dolorem pariatur quod atque, deserunt quisquam accusantium placeat voluptatibus voluptatem nihil exercitationem! Ratione quos consequuntur placeat sapiente quia tenetur!</p>   
+                <button type="button" class="btn btn-lg mt-3 mb-3 mt-sm-0 mb-sm-0 fs-4 rounded-4">QUIERO SER VOLUNTARIO</button>
+            
+            </article>
+        </section>
+</main>
+
+
+    <!-- FOOTER VA EN TODAS LAS PAGINAS -->
     
+    <footer class="d-md-flex flex-md-row justify-content-md-evenly align-items-md-center">
+
+        <div class="d-none d-md-flex flex-md-column justify-content-md-center align-items-md-center">
+            <p class="h4">ONG ANIMALES RAMALLO</p>
+            <p class="text-center p-tam-ft fs-6"> Somos una asociación civil sin fines de lucro abocada a difundir, proteger y promover los derechos de los animales.</p>
+        </div>
+
+        <div class="d-none d-md-flex flex-md-column">
+            <h2 class="">Newsletter</h2>
+            <form class="d-md-flex flex-md-row">
+                <input type="email" name="email" id="email" placeholder="Ingrese su correo" class="form-control">
+                <input type="button" value="ENVIAR" class="ms-2 btn btn-ft-color">
+            </form>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-center me-5 mt-3 d-md-none">
+                <h2 class="">Newsletter</h2>
+                <form class="d-flex flex-row">
+                    <input type="email" name="email" id="email" placeholder="Ingrese su correo" class="form-control">
+                    <input type="button" value="ENVIAR" class="ms-2 btn btn-ft-color">
+                </form>
+            </div>
+            
+            <div class="d-flex justify-content-center align-items-center mt-5 mt-md-1">
+                <a href="https://www.instagram.com/onganimalesramallo/" target="_blank"><img src="../assets/logoinstagram.png" alt="logo instagram" class="img-fter me-3"></a>
+                <a href="https://www.tiktok.com/@animalesramalloon" target="_blank"><img src="../assets/logotiktok.png" alt="logo tiktok" class="img-fter"></a>
+            </div>
+        </div>
     
-    <footer>
-        <p>Copyright - InuMolinari 2023©</p>
+        <p class="text-center mt-3 fs-5">Copyright ONG Animales | InuMolinari 2023©</p>
+        
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 
 </body> 
