@@ -1,0 +1,48 @@
+/*  le cambio las medidas a la imagen del perro */
+.img_perro{
+    width: 20rem;
+    height: 20rem;
+}
+
+/*ajusto tamaño de boton*/
+.btn-perros{
+    width: 12rem;
+    height: 3rem;
+}
+
+/*Llamo mixin responsive 576px*/
+@include responsive (map-get($breakpoints, sm)){
+   /* cambio tamaño a la img */
+    .img_perro{
+        width: 25rem;
+        height: 25rem;
+    } 
+    /*agrando boton de perros*/
+    .btn-perros{
+        width: 15rem;
+        height: 4rem;
+    }
+}
+/*Llamo mixin responsive 768px*/
+@include responsive (map-get($breakpoints, md)){
+    /* cambio tamaño a la img */
+    .img_perro{
+        width: 30rem;
+        height: 30rem;
+    }
+    /*agrando boton de perros*/
+    .btn-perros{
+        width: 15rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+
+    /*agrando boton de requisitos y cambio tamaño de fuente*/
+    .btn-req{
+        width: 30rem;
+        height: 5rem;
+        font-size: 2rem;
+    }
+}
+
+    

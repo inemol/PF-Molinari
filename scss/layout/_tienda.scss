@@ -1,0 +1,44 @@
+/* tamaño a las img de Tienda */
+.img-tienda{
+    width: 24.8rem;
+    height: 24rem;
+}
+
+/*AGRANDO TAMAÑO DE CONTENEDOR DE TARJETAS*/
+@include responsive (map-get($breakpoints, md)){
+    .section-tienda{
+        width: 80rem;
+
+        /*AGRANDO TITULO DE TARJETA*/
+        .card-title{
+            font-size: 2rem;
+        }
+        /*AGRANDO TEXTO CARD*/
+        .card-text{
+            font-size: 1.5rem;
+        }
+        /*AGRANDO BTN CARD*/
+        .btn{
+            width: 10rem;
+            height: 3rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@include responsive (map-get($breakpoints, lg)){
+    .section-tienda{
+        width: 100rem;
+
+        /*AGRANDO CARD*/
+        .card{
+            width: 30rem;
+        }
+
+        /* tamaño a las img de Tienda */
+        .img-tienda{
+            width: 29.8rem;
+            height: 29.8rem;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+/*Contenido principal no ocupa toda la pagina, entonces bajo el footer al bottom 0*/
+.footer-index{
+    position: absolute;
+    bottom: 0;
+}
+
+/*agrando el alto del div dona*/
+.div-dona{
+    height: 68vh;
+}
+
+/*Llamo mixin responsive 768px*/
+@include responsive (map-get($breakpoints, md)){
+
+    .div-dona{
+        height: 65.5vh;
+    }
+}

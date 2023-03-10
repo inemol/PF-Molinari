@@ -1,0 +1,50 @@
+/*cambio de tamaño y fuente a los dos parrafos principales*/
+.p-tam-3{
+    width:26rem;
+    height: 22rem;
+    font-size: 1.3rem;
+}
+
+/*Llamo mixin responsive 576px*/
+@include responsive (map-get($breakpoints, sm)){
+    /*cambio medidas al article*/
+    .article-tam{
+        height: 30rem;
+        height: 40rem;
+    }
+    /*cambio de tamaño y fuente a los dos parrafos principales*/
+    .p-tam-3{
+        width:18rem;
+        height: 36rem;
+        font-size: 1.3rem;
+    }
+}
+/*Llamo mixin responsive 768px*/
+@include responsive (map-get($breakpoints, md)){
+    /*cambio de tamaño y fuente a los dos parrafos principales*/
+    .p-tam-3{
+        width:25rem;
+        height: 30rem;
+        font-size: 1.45rem;
+    }
+}
+/*Llamo mixin responsive 992px*/
+@include responsive (map-get($breakpoints, lg)){
+
+    /*cambio de tamaño y fuente a los dos parrafos principales*/
+    .p-tam-3{
+        width:35rem;
+        height: 25rem;
+        font-size: 1.6rem;
+    }
+}
+/*Llamo mixin responsive 1200px*/
+@include responsive (map-get($breakpoints, xl)){
+
+    /*cambio de tamaño y fuente a los dos parrafos principales*/
+    .p-tam-3{
+        width:45rem;
+        height: 24rem;
+        font-size: 1.75rem;
+    }
+}

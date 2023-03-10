@@ -1,0 +1,93 @@
+
+/* le doy medidas al footer cuando hay mucho contenido en la pagina */
+footer{
+    background-color: $color-principal;
+    width: 100vw;
+    height: 10rem;
+
+    /* le doy medidas a la img del footer */
+    .img-fter{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    /*cambio color al boton de enviar mail*/
+    .btn{
+        background-color: $blanco;
+    }
+
+    /*uso mixin para responsive 576px*/
+    @include responsive (map-get($breakpoints, sm)){
+        /*cambio tamaño de newsletter*/
+        .news{
+            font-size: 2rem;
+        }
+        /*cambio tamaño de copyright*/
+        .copy{
+            font-size: 1.3rem;
+        }
+    }
+
+}
+
+/*Llamo mixin responsive 768px*/
+@include responsive (map-get($breakpoints, md)){
+    /* cambio el tamaño del footer */
+    footer{
+        height: 14rem;
+        /*cambio tamaño de cuadro de texto-footer*/
+        .p-tam-ft{
+            width: 25rem;
+            font-size: 1.4rem;
+        }
+        /*cambio tamaño de copyright*/
+        .copy{
+            width: 18rem;
+        }
+    }
+}
+
+/*Llamo mixin responsive 992px*/
+@include responsive (map-get($breakpoints, lg)){
+    /* cambio el tamaño del footer */
+    footer{
+        height: 15rem;
+        /*cambio tamaño de cuadro de texto-footer*/
+        .p-tam-ft{
+            width: 35rem;
+            font-size: 1.5rem;
+        }
+        /*cambio tamaño de copyright*/
+        .copy{
+            width: 30rem;
+            font-size: 1.6;
+        }
+    }
+}
+
+/*Llamo mixin responsive 1200px*/
+@include responsive (map-get($breakpoints, xl)){
+    /* cambio el tamaño del footer */
+    footer{
+        height: 15rem;
+        /*cambio tamaño de copyright*/
+        .copy{
+            width: 30rem;
+            font-size: 1.6rem;
+        }
+        /*cambio tamaño de input mail*/
+        .form-control{
+            width: 15rem;
+        }
+        /*cambio tamaño de newsletter*/
+        .news{
+            font-size: 2.5rem;
+        }
+
+        /* le doy medidas a la img del footer */
+        .img-fter{
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+}

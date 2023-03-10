@@ -1,0 +1,6 @@
+/*Funcion para responsive, le pasamos un argumento proveniente de un MAP*/
+@mixin responsive ($medida){
+    @media screen and (min-width: $medida){
+        @content;
+    }
+}

@@ -1,0 +1,44 @@
+/* Tamaño al formulario de contacto */
+.form-size{
+    height: 4rem;
+    width: 30rem;
+    font-size: 1.3rem;
+
+}
+
+/* tamaño al area de texto en contacto */
+.text_area{
+    width: 30rem;
+    height: 10rem;
+    font-size: 1.3rem;
+}
+
+/*Llamo mixin responsive 768px*/
+@include responsive (map-get($breakpoints, md)){
+    /*Cambio tamaño del formulario*/
+    .form-size{
+        height: 5rem;
+        width: 35rem;
+    }
+    /*cambio tamaño del campo de texto*/
+    .text_area{
+        width: 35rem;
+        height: 15rem;
+    }
+}
+
+/*Llamo mixin responsive 1200px*/
+@include responsive (map-get($breakpoints, xl)){
+    /*cambio tamaño de form*/
+    .form-size{
+        height: 5rem;
+        width: 40rem;
+        font-size: 2rem;
+    }
+    /*cambio tamaño de campo de texto*/
+    .text_area{
+        width: 40rem;
+        height: 20rem;
+        font-size: 2rem;
+    }
+}

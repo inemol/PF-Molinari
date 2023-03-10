@@ -1,0 +1,41 @@
+/*BOOTSTRAP*/
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/*importo google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/*variables para usar en toda la pagina*/
+@import "./abstract/variables";
+
+/*mixin para responsive*/
+@import "./layout/responsive";
+
+/*RESETEO DEL HTML*/
+@import "../scss/base/_reset.scss";
+
+/*GENERALIDADES DE TODAS LAS PAGINAS*/
+@import "./base/general";
+
+/*HEADER QUE VA EN TODAS LAS PAGINAS*/
+@import "./layout/header";
+
+/*PAGINA INDEX*/
+@import "./layout/pagindex";
+
+/*PAGINA ADOPTA*/
+@import "./layout/adopta";
+
+/*PAGINA DONA*/
+@import "./layout/dona";
+
+/*PAGINA PARTICIPÁ*/
+@import "./layout/participa";
+
+/*PAGINA TIENDA*/
+@import "./layout/tienda";
+
+/*PAGINA CONTACTO*/
+@import "./layout/contacto";
+
+/*FOOTER QUE VA EN TODAS LAS PAGINAS*/
+@import "./layout/footer";
